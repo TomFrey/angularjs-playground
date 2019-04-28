@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="chucknorris-app">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chucknorris App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <main ng-view></main>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="lib/angular-resource/angular-resource.js"></script>
+  <script src="app.js"></script>
+  <script src="home/home.module.js"></script>
+  <script src="home/randomJoke.js"></script>
+  <script src="shared/shared.module.js"></script>
+  <script src="shared/APIService.js"></script>
+</body>
+</html>
