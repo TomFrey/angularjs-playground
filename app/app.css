@@ -6,7 +6,7 @@ main{
   box-shadow: lightgray 1px 1px 1px;
 }
 
-random-joke blockquote {
+blockquote {
   background: #f9f9f9;
   border-left: 6px solid sandybrown;
   margin: 1.5em 10px;
@@ -14,11 +14,21 @@ random-joke blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 }
 
-random-joke blockquote:before {
+blockquote:before{
   color: #ccc;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
+}
+
+blockquote:after{
+  color: transparent;
+  content: close-quote;
+  font-size: 0;
+}
+
+.loading {
+  color: blue;
 }

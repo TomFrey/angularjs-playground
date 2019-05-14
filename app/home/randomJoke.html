@@ -1,2 +1,19 @@
 
+<button ng-click="$ctrl.onNewOneClicked()">
+    New choke
+</button>
+
+<select ng-model="$ctrl.selectedCategory">
+    <option ng-repeat="category in $ctrl.categories"
+            ng-bind="category"
+            value="{{ category }}">
+    </option>
+</select>
+
 <blockquote ng-bind="$ctrl.randomJoke"></blockquote>
+
+<div>
+    Loading: <span class="loading" ng-bind="$ctrl.loading"></span>
+</div>
+
+

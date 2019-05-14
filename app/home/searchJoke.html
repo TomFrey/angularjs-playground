@@ -1,0 +1,8 @@
+<form action="">
+    <input type="text" placeholder="Suchtext..." ng-model="$ctrl.searchTerm">
+    <button ng-click="$ctrl.onSearchClicked()">
+        Search
+    </button>
+</form>
+
+<blockquote ng-repeat="joke in $ctrl.jokes" ng-bind="joke"></blockquote>

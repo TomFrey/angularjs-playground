@@ -5,9 +5,18 @@ angular.module('chucknorris-app.shared')
 
     return $resource(BASE_URL, {},
       {
-        random: {
-          url: BASE_URL + '/random',
-          method: 'GET'
-        }
+            random: {
+                url: BASE_URL + '/random',
+                method: 'GET',
+            },
+            categories: {
+              url: BASE_URL + '/categories',
+              isArray: true,
+              method: 'GET'
+            },
+          search: {
+              url: BASE_URL + '/search',
+              method: 'GET'
+          }
       })
   })
